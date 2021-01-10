@@ -14,8 +14,6 @@ public class ProductCreator {
 
     public static Product withCredentialsFromProperty(String orderNumber){
         orderNumber = orderNumber.toLowerCase();
-        System.out.println("ASDasdasdasdasdasd");
-        log.info("SFADASDASDASDSADASDASDDSDSADASDSD");
 
         String itemName = resolveTemplate(ITEM_NAME_TEMPLATE, orderNumber);
         String itemSize = resolveTemplate(ITEM_SIZE_TEMPLATE, orderNumber);
